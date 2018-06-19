@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Resume - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" ng-app="drApp" ng-controller="drCtrl">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Start Bootstrap</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="http://www.suryaputhradrivingschool.com/images/sp.png"
+          alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Driving Instructions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Documentatiopn & Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Classes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section back p-3 p-lg-5 d-flex d-column" id="about">
+      <div class="my-auto">
+        <h1 class="mb-0">suryaputhra
+          <br>
+          <span class="text-primary">driving school</span>
+        </h1>
+        <div class="subheading mb-5 text-left">DRIVE WITH CONFIDENCE</div>
+        <div class="subheading mb-5">HNR Complex,2nd Floor Above Sub-Register Office,
+          <br> Bangalore Main Road,Sarjapura-562 125
+          <br>
+          <a href="mailto:name@email.com">suryaputhradrivingschool@gmail.com</a>
+        </div>
+        <p class="mb-5">Safe driving today requires a higher level of confidence and competence.Road safety is a key concern area for both
+          the Government and the people on Indian roads, given the poor traffic planning, increasing number of vehicles,
+          lack of professionalism in driving and untrained drivers on road. In a bid to address these issues, Maruti Suzuki
+          India Ltd. has launched Maruti Driving School - its initiative for promoting safe driving...</p>
+        <ul class="list-inline list-social-icons mb-0">
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <div class="my-auto">
+        <h2 class="mb-5">Services</h2>
+
+        <div class="row mb-5">
+          <div class="col-4" ng-repeat="ins in services">
+            <div class="shadow1 text-center dr-ins">
+              <h3 class="mb-0 ser-imgc">
+                <img class="ser-img" src="img/ser/s{{$index+1}}.jpg" />
+              </h3>
+              <h3 class="mb-0 ser-title">{{ins.title}}</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <div class="my-auto">
+        <h2 class="mb-5">Driving Instructions</h2>
+
+        <div class="row mb-5">
+          <div class="col-4" ng-repeat="ins in drivingIns">
+            <div class="shadow1 text-center dr-ins">
+              <h3 class="mb-0">
+                <img class="di-img" src="{{ins.img}}" />
+              </h3>
+              <h3 class="mb-0">{{ins.title}}</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <!-- <div class="my-auto" ng-include="'./docs.html'"> -->
+      <div class="my-auto">
+        <h2 class="mb-5">Documentatiopn & Process</h2>
+        <div class="shadow1 doc" data-toggle="collapse" data-target="#1">
+          <div class="subheading mb-3">2 Wheeler And 4 Wheeler License
+            <i class="fa fa-chevron-up green-text"></i>
+          </div>
+          <ul class="fa-ul mb-0 collapse show" id="1">
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              Step 1: Learning licence</li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              Step 2: Permanent driving licence </li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              Common age proofs- 10th Mark sheet, Passport, TC, LIC Bond, Birth certificate, Old driving license, PAN Card (any one compulsory).
+            </li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              Local address proof- Election Card, Aadhar card, Ration Card, LIC Bond, Passport, BSNL Bill, Rental agreement and with current
+              bill (any one compulsory). </li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              Permanent Address proof (Other State)- Any Government ID proof or sale deed. </li>
+            <li>
+              <i class="fa-li fa fa-circle yellow-text"></i>
+              Note: 5 passport size photographs would also be needed along with the above documents. And if the applicant's age is 40 years
+              and above, a Medical certificate have to be produced. </li>
+          </ul>
+        </div>
+
+
+        <div class="shadow1 doc" data-toggle="collapse" data-target="#2">
+          <div class="subheading mb-3">Duplicate Driving Licence.
+            <i class="fa fa-chevron-up green-text"></i>
+          </div>
+          <ul class="fa-ul mb-0 collapse" id="2">
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              Proof for having lost driving licence (Acknowledgement/FIR copy for having lodged complaint with Police). </li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              Affidavit sworn by the applicant before an executive magistrate for having lost the driving licence. </li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              In case of same city, photo copy of lost licence.
+            </li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              5-6 recent passport sized photographs.. </li>
+          </ul>
+        </div>
+
+        <div class="shadow1 doc" data-toggle="collapse" data-target="#3">
+          <div class="subheading mb-3">Duplicate Driving Licence.
+            <i class="fa fa-chevron-up green-text"></i>
+          </div>
+          <ul class="fa-ul mb-0 collapse" id="3">
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              Original existing driving licence 3 recent passport size photographs.. </li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              If applicant's age is 40 years and above, Medical certificate have to be produced. </li>
+          </ul>
+        </div>
+
+        <div class="shadow1 doc" data-toggle="collapse" data-target="#4">
+          <div class="subheading mb-3">Change of Address.
+            <i class="fa fa-chevron-up green-text"></i>
+          </div>
+          <ul class="fa-ul mb-0 collapse" id="4">
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              Address proof: Your Voter card Aadhaar card or Passport mentioning your permanent address would suffice, or your permanent
+              address is same as local address, then only permanent address alone will suffice. </li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              Self-swearing Affidavit by an applicant before an executive Magistrate or a First Class Judicial Magistrate or a Notary Public
+              as evidence of age and address in case of submitting local address proof as rental agreement or HR letter.
+              </li>
+          </ul>
+        </div>
+
+        <div class="shadow1 doc" data-toggle="collapse" data-target="#5">
+          <div class="subheading mb-3">International Driving Permitt.
+            <i class="fa fa-chevron-up green-text"></i>
+          </div>
+          <ul class="fa-ul mb-0 collapse" id="5">
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              3-5 recent passport size photograph. </li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              Original Valid Driving Licence + Passport + Visa + Air Ticket. . </li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              The applicant should be citizen of India. </li>
+            <li>
+              <i class="fa-li fa fa-circle green-text"></i>
+              In case of driving licence belonging to other regions/state, the applicant should apply and obtain change of address in the driving licence. In case of licence issued by other regions within Karnataka state the time required for change of address is three days, and in case of driving licence issued by other states the time required is 21 days. Therefore the applicant keeping the time required in mind should plan well in advance while making an application for IDP.  </li>
+            <li>
+              <i class="fa-li fa fa-circle yellow-text"></i>
+              Note:The address in the Driving licence should fall under the jurisdiction of the Regional Transport office to where the application for IDP is being made. Applicant shall appear for re-test if the driving licence issued in within 3 months. Validity of the IDP will be for one year or till the validity of the driving licence whichever occurs first.  </li>
+            <li>
+              <i class="fa-li fa fa-circle yellow-text"></i>
+              Note:In case of driving licence belonging to other regions/state, the applicant should apply and obtain change of address in the driving licence. In case of licence issued by other regions within Karnataka state the time required for change of address is three days, and in case of driving licence issued by other states the time required is 21 days. Therefore the applicant keeping the time required in mind should plan well in advance while making an application for IDP.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+      <div class="my-auto">
+        <h2 class="mb-5">Interests</h2>
+        <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and
+          novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring
+          chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web
+          development world.</p>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+      <div class="my-auto">
+        <h2 class="mb-5">Awards &amp; Certifications</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Google Analytics Certified Developer</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Mobile Web Specialist - Google Certification</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1
+            <sup>st</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1
+            <sup>st</sup>
+            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            2
+            <sup>nd</sup>
+            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+          <li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1
+              <sup>st</sup>
+              Place - James Buchanan High School - Hackathon 2006</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              3
+              <sup>rd</sup>
+              Place - James Buchanan High School - Hackathon 2005</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+  <script>
+    var driving = angular.module("drApp", []);
+    driving.controller("drCtrl", function ($scope) {
+      let _ = $scope;
+      _.drivingIns = [
+        { img: "img/di/formatted/tl.jpg", title: "Traffic Logic", link: "" },
+        { img: "img/di/formatted/dr.jpg", title: "Driving Rules and Regulations", link: "" },
+        { img: "img/di/formatted/ms.jpg", title: "Mandatory Signs", link: "" },
+        { img: "img/di/formatted/cs.jpg", title: "Cautionary Signs", link: "" },
+        { img: "img/di/formatted/is.jpg", title: "Informatory Signs", link: "" },
+        { img: "img/di/formatted/tv.jpg", title: "Traffic Violation Fines", link: "" },
+        { img: "img/di/formatted/tp.jpg", title: "Traffic Provisions", link: "" },
+        { img: "img/di/formatted/ad.jpg", title: "Advice to Drivers", link: "" },
+        { img: "img/di/formatted/qp.jpg", title: "STALL QUESTION PAPER", link: "" },
+      ];
+      _.services = [
+        { img: "img/ser/tl.jpg", title: "Driving Classes", link: "" },
+        { img: "img/di/formatted/dr.jpg", title: "Driving License", link: "" },
+        { img: "img/di/formatted/ms.jpg", title: "Vehicle Fittness Application", link: "" },
+        { img: "img/di/formatted/cs.jpg", title: "Vehicle Registration", link: "" },
+        { img: "img/di/formatted/is.jpg", title: "International Driving License", link: "" },
+        { img: "img/di/formatted/tv.jpg", title: "Renew License", link: "" },
+        { img: "img/di/formatted/tp.jpg", title: "Cancellation of Hypothecation", link: "" },
+        { img: "img/di/formatted/ad.jpg", title: "No Objection Certificate(NOC)", link: "" },
+        { img: "img/di/formatted/qp.jpg", title: "Pan card", link: "" },
+        { img: "img/di/formatted/qp.jpg", title: "insurance", link: "" },
+        { img: "img/di/formatted/qp.jpg", title: "Ownership Transfer", link: "" },
+        { img: "img/di/formatted/qp.jpg", title: "Vehicle Tax pay", link: "" },
+        { img: "img/di/formatted/qp.jpg", title: "Clearance Certificate", link: "" },
+      ];
+    });
+  </script>
+
+</body>
+
+</html>
